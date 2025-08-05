@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unified Email Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h3>My Inboxes</h3>
+            </div>
+            <ul class="account-list">
+                <li class="account-item active" data-service="gmail">
+                    <i class="fa-brands fa-google"></i> Gmail
+                </li>
+                <li class="account-item" data-service="outlook">
+                    <i class="fa-solid fa-envelope"></i> Outlook
+                </li>
+                <li class="account-item" data-service="yahoo">
+                    <i class="fa-brands fa-yahoo"></i> Yahoo
+                </li>
+            </ul>
+        </nav>
+        <main class="email-view">
+            <header class="email-header">
+                <h1 id="current-inbox-title">Gmail Inbox</h1>
+                <div class="user-profile">
+                    <i class="fa-solid fa-user-circle"></i>
+                    <span>rajaram@borelsigma.com</span>
+                </div>
+            </header>
+            <div class="email-list-container">
+                <ul id="email-list">
+                    </ul>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
